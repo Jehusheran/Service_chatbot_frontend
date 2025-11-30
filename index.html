@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <!-- SEO metadata -->
+    <title>Service Chatbot • AI + Scheduling</title>
+    <meta name="description" content="Service Chatbot: Agent-controlled messaging, AI summaries, and appointment booking integrated with Google Calendar." />
+    <meta name="keywords" content="chatbot, salesiq, scheduling, google calendar, service chatbot, appointment booking, AI summary" />
+    <meta name="author" content="Your Team Name" />
+    <meta name="theme-color" content="#4f46e5" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Service Chatbot • AI + Scheduling" />
+    <meta property="og:description" content="WhatsApp-style company-controlled messaging with agent, bot, and manager features. Book appointments, reschedule, and get AI summaries." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yourdomain.example/" />
+    <meta property="og:image" content="https://yourdomain.example/og-image.png" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Service Chatbot • AI + Scheduling" />
+    <meta name="twitter:description" content="WhatsApp-style company-controlled messaging with bot/agent modes and scheduling integrations." />
+    <meta name="twitter:image" content="https://yourdomain.example/og-image.png" />
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
+    <!-- Vite handles CSS/JS injection -->
+  </head>
+  <body class="antialiased bg-slate-50 text-slate-900">
+    <!-- Preloader target (will be used before React mounts) -->
+    <div id="preloader-root" class="fixed inset-0 z-50 flex items-center justify-center bg-white">
+      <!-- the Preloader component will also mount into React; this keeps a placeholder for pre-hydration -->
+      <div class="flex flex-col items-center gap-4">
+        <svg class="w-16 h-16 animate-spin-smooth text-indigo-600" viewBox="0 0 50 50">
+          <defs />
+          <circle cx="25" cy="25" r="20" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-dasharray="31.4 31.4"></circle>
+        </svg>
+        <div class="text-sm text-slate-500">Booting Service Chatbot…</div>
+      </div>
+    </div>
+
+    <div id="root"></div>
+
+    <script type="module" src="/src/main.jsx"></script>
+    <!-- dev/demo only: Tailwind CDN (not for production) -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  // optional: extend theme quickly for demo
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          brand: {
+            600: '#4f46e5',
+            500: '#6366f1'
+          }
+        }
+      }
+    }
+  }
+</script>
+
+  </body>
+</html>
